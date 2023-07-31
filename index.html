@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary bg-gradient text-center p-2"><h1>Welcome to the city weather website channel thingamabobber</h1></header>
+    
+    <div class="container">
+        <div class="row gap-2 justify-content-center">
+            <!-- Sidebar where the user will search for the city and a history of searched cities will appear -->
+            <aside class="col-3 bg-danger p-1">
+                <h3 class="text-center">Search a city:</h3>
+                <div class="text-center border-bottom p-2">
+                    <input type="text" placeholder="Minneapolis">
+                    <input type="button" value="Search">
+                </div>
+                <div class="row text-center p-1 gap-2">
+                    <input type="button" value="Chicago" class="col-10 m-auto">
+                    <input type="button" value="San Diego" class="col-10 m-auto">
+                    <input type="button" value="Minneapolis" class="col-10 m-auto">
+                    <input type="button" value="New York City" class="col-10 m-auto">
+                    <input type="button" value="Indianapolis" class="col-10 m-auto">
+                    <input type="button" value="Plymouth" class="col-10 m-auto">
+                </div>
+            </aside>
+            <!-- Main content -->
+            <main class="col-8 bg-success p-2">
+                <div class="border border-3 m-2 p-2">
+                    <h3>City Name (Date) [icon]</h3>
+                    <div>Temp:</div>
+                    <div>Humidity:</div>
+                    <div>Wind:</div>
+                </div>
+                <!-- Cards -->
+                <div class="container">
+                    <div class="row gap-3">
+                        <div class="col border m-2 p-2">
+                            <h4>City Name[i]</h4>
+                            <div>Date</div>
+                            <div>Temp:</div>
+                            <div>Humidity:</div>
+                            <div>Wind:</div>
+                        </div>
+                        <div class="col border m-2 p-2">
+                            <h4>City Name[i]</h4>
+                            <div>Date</div>
+                            <div>Temp:</div>
+                            <div>Humidity:</div>
+                            <div>Wind:</div>
+                        </div>
+                        <div class="col border m-2 p-2">
+                            <h4>City Name[i]</h4>
+                            <div>Date</div>
+                            <div>Temp:</div>
+                            <div>Humidity:</div>
+                            <div>Wind:</div>
+                        </div>
+                        <div class="col border m-2 p-2">
+                            <h4>City Name[i]</h4>
+                            <div>Date</div>
+                            <div>Temp:</div>
+                            <div>Humidity:</div>
+                            <div>Wind:</div>
+                        </div>
+                        <div class="col border m-2 p-2">
+                            <h4>City Name[i]</h4>
+                            <div>Date</div>
+                            <div>Temp:</div>
+                            <div>Humidity:</div>
+                            <div>Wind:</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+<script src="api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=2b265a8a3022c8ba7b8d4c9a7af405b2"></script>
+<script href="./assets/js/script.js"></script>
+</html>
