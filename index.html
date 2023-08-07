@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,25 +13,19 @@
     <div class="container">
         <div class="row gap-2 justify-content-center">
             <!-- Sidebar where the user will search for the city and a history of searched cities will appear -->
-            <aside class="col-3 bg-danger p-1">
+            <aside class="col-3 bg-danger p-1 rounded-start">
                 <h3 class="text-center">Search a city:</h3>
                 <div class="text-center border-bottom p-2">
-                    <input type="text" placeholder="Minneapolis">
-                    <input type="button" value="Search">
+                    <input type="text" placeholder="Minneapolis" id="searchBar">
+                    <input type="button" value="Search" id="searchButton">
                 </div>
-                <div class="row text-center p-1 gap-2">
-                    <input type="button" value="Chicago" class="col-10 m-auto">
-                    <input type="button" value="San Diego" class="col-10 m-auto">
-                    <input type="button" value="Minneapolis" class="col-10 m-auto">
-                    <input type="button" value="New York City" class="col-10 m-auto">
-                    <input type="button" value="Indianapolis" class="col-10 m-auto">
-                    <input type="button" value="Plymouth" class="col-10 m-auto">
+                <div class="row text-center p-1 gap-2" id="history">
                 </div>
             </aside>
             <!-- Main content -->
-            <main class="col-8 bg-success p-2">
-                <div class="border border-3 m-2 p-2">
-                    <h3>City Name (Date) [icon]</h3>
+            <main class="col-8 bg-success p-2 rounded-end">
+                <div class="border border-3 m-1 p-2 rounded">
+                    <h3><span class="cityName">City Name</span> <span id="currentDate">(Date)</span> <span id="weatherIcon">[icon]</span></h3>
                     <div>Temp:</div>
                     <div>Humidity:</div>
                     <div>Wind:</div>
@@ -38,36 +33,36 @@
                 <!-- Cards -->
                 <div class="container">
                     <div class="row gap-3">
-                        <div class="col border m-2 p-2">
-                            <h4>City Name[i]</h4>
+                        <div class="col border m-1 p-1 rounded">
+                            <h4><span class="cityName">City Name</span>[i]</h4>
                             <div>Date</div>
                             <div>Temp:</div>
                             <div>Humidity:</div>
                             <div>Wind:</div>
                         </div>
-                        <div class="col border m-2 p-2">
-                            <h4>City Name[i]</h4>
+                        <div class="col border m-1 p-1 rounded">
+                            <h4><span class="cityName">City Name</span>[i]</h4>
                             <div>Date</div>
                             <div>Temp:</div>
                             <div>Humidity:</div>
                             <div>Wind:</div>
                         </div>
-                        <div class="col border m-2 p-2">
-                            <h4>City Name[i]</h4>
+                        <div class="col border m-1 p-1 rounded">
+                            <h4><span class="cityName">City Name</span>[i]</h4>
                             <div>Date</div>
                             <div>Temp:</div>
                             <div>Humidity:</div>
                             <div>Wind:</div>
                         </div>
-                        <div class="col border m-2 p-2">
-                            <h4>City Name[i]</h4>
+                        <div class="col border m-1 p-1 rounded">
+                            <h4><span class="cityName">City Name</span>[i]</h4>
                             <div>Date</div>
                             <div>Temp:</div>
                             <div>Humidity:</div>
                             <div>Wind:</div>
                         </div>
-                        <div class="col border m-2 p-2">
-                            <h4>City Name[i]</h4>
+                        <div class="col border m-1 p-1 rounded">
+                            <h4><span class="cityName">City Name</span>[i]</h4>
                             <div>Date</div>
                             <div>Temp:</div>
                             <div>Humidity:</div>
@@ -79,6 +74,5 @@
         </div>
     </div>
 </body>
-<script src="api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=2b265a8a3022c8ba7b8d4c9a7af405b2"></script>
-<script href="./assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 </html>
