@@ -7,13 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
-<body class="bg-info bg-gradient">
+<body>
     <header class="bg-primary text-center p-2"><h1>Welcome to the city weather website channel thingamabobber</h1></header>
     
     <div class="container">
         <div class="row gap-2 justify-content-center">
             <!-- Sidebar where the user will search for the city and a history of searched cities will appear -->
-            <aside class="col-3 border border-3 border-primary p-1 rounded">
+            <aside class="col-3 border border-3 border-primary p-1 rounded bg-info">
                 <h3 class="text-center">Search a city:</h3>
                 <div class="text-center border-bottom p-2">
                     <input type="text" placeholder="Minneapolis" id="searchBar">
@@ -24,8 +24,8 @@
             </aside>
             <!-- Main content -->
             <main class="col-8 p-2 rounded-end">
-                <div class="border border-3 m-1 p-2 rounded bg-white border-primary">
-                    <h3><span id="cityName">City Name</span> <span id="currentDate">(Date)</span> <span id="weatherIcon">[icon]</span></h3>
+                <div class="border border-3 m-1 p-2 rounded bg-info border-primary">
+                    <h3><span id="cityName">City Name</span> <span id="currentDate">(Date)</span> <span id="weatherIcon"></span></h3>
                     <div>Temp:<span id="currentTemp"></span></div>
                     <div>Humidity:<span id="currentHumidity"></span></div>
                     <div>Wind:<span id="currentWind"></span></div>
@@ -33,35 +33,35 @@
                 <!-- Cards -->
                 <div class="container">
                     <div class="row gap-3">
-                        <div class="col border m-1 p-1 rounded bg-white border-primary border-2">
-                            <div>Date [i]</div>
-                            <div>Temp:<span id="Temp0"></span></div>
-                            <div>Humidity:<span id="Humidity0"></span></div>
-                            <div>Wind:<span id="Wind0"></span></div>
+                        <div class="col border m-1 p-1 rounded border-primary border-2 bg-info">
+                            <div><span id="date5">Date</span> <span id="icon5"></span></div>
+                            <div>Temp:<span id="Temp5"></span></div>
+                            <div>Humidity:<span id="Humidity5"></span></div>
+                            <div>Wind:<span id="Wind5"></span></div>
                         </div>
-                        <div class="col border m-1 p-1 rounded bg-white border-primary border-2">
-                            <div>Date [i]</div>
-                            <div>Temp:<span id="Temp1"></span></div>
-                            <div>Humidity:<span id="Humidity1"></span></div>
-                            <div>Wind:<span id="Wind1"></span></div>
+                        <div class="col border m-1 p-1 rounded border-primary border-2 bg-info">
+                            <div><span id="date13">Date</span> <span id="icon13"></span></div>
+                            <div>Temp:<span id="Temp13"></span></div>
+                            <div>Humidity:<span id="Humidity13"></span></div>
+                            <div>Wind:<span id="Wind13"></span></div>
                         </div>
-                        <div class="col border m-1 p-1 rounded bg-white border-primary border-2">
-                            <div>Date [i]</div>
-                            <div>Temp:<span id="Temp2"></span></div>
-                            <div>Humidity:<span id="Humidity2"></span></div>
-                            <div>Wind:<span id="Wind2"></span></div>
+                        <div class="col border m-1 p-1 rounded border-primary border-2 bg-info">
+                            <div><span id="date21">Date</span> <span id="icon21"></span></div>
+                            <div>Temp:<span id="Temp21"></span></div>
+                            <div>Humidity:<span id="Humidity21"></span></div>
+                            <div>Wind:<span id="Wind21"></span></div>
                         </div>
-                        <div class="col border m-1 p-1 rounded bg-white border-primary border-2">
-                            <div>Date [i]</div>
-                            <div>Temp:<span id="Temp3"></span></div>
-                            <div>Humidity:<span id="Humidity3"></span></div>
-                            <div>Wind:<span id="Wind3"></span></div>
+                        <div class="col border m-1 p-1 rounded border-primary border-2 bg-info">
+                            <div><span id="date29">Date</span> <span id="icon29"></span></div>
+                            <div>Temp:<span id="Temp29"></span></div>
+                            <div>Humidity:<span id="Humidity29"></span></div>
+                            <div>Wind:<span id="Wind29"></span></div>
                         </div>
-                        <div class="col border m-1 p-1 rounded bg-white border-primary border-2">
-                            <div>Date [i]</div>
-                            <div>Temp:<span id="Temp4"></span></div>
-                            <div>Humidity:<span id="Humidity4"></span></div>
-                            <div>Wind:<span id="Wind4"></span></div>
+                        <div class="col border m-1 p-1 rounded border-primary border-2 bg-info">
+                            <div><span id="date37">Date</span> <span id="icon37"></span></div>
+                            <div>Temp:<span id="Temp37"></span></div>
+                            <div>Humidity:<span id="Humidity37"></span></div>
+                            <div>Wind:<span id="Wind37"></span></div>
                         </div>
                     </div>
                 </div>
