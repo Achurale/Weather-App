@@ -21,5 +21,9 @@ humidity
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
-## Link
+## Description
+A weather app using the open weather map API and Bootstrap as my CSS framework. This one took me a good minute to figure out, but it will show the temperature, humidity, and the wind of the earliest the API allows and the next 5 days, along with the date of each card and a corresponding icon to show the weather for that day. The user can also search other cities and the information provided will change accordingly, and will even provide a search history.
+
+## Screenshot and Link
+![An example screenshot of the weather app showing Las Vegas](./assets/img/screenshot.png)
 https://achurale.github.io/Weather-App/
